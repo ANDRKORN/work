@@ -3,7 +3,6 @@ import { Provider } from 'react-redux'
 import store from './resux/rootReducer'
 import Raspisanie from './Raspisanie'
 function App() {
-  console.log(store);
   return (
     <Provider store={store} >
       <button onClick={() => {

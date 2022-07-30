@@ -3,12 +3,12 @@ import * as R from 'ramda'
 import { useDispatch } from "react-redux";
 
 const Cell = ({info, cd}) => {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
     return (<div>
         <div
             style={{ display: 'flex' }}
             onClick={() => dispatch({ type: 'CHANGE_CELL', payload: {
-                update: {...info, fiopac: 'Прлнько'},
+                update: {...info, fiopac: 'Пронько'},
                 cd: cd,
             }})}   
         >
@@ -20,7 +20,6 @@ const Cell = ({info, cd}) => {
 }
 
 function moviePropsAreEqual(prevMovie, nextMovie) {
-    console.log(R.equals(prevMovie, nextMovie));
    return R.equals(prevMovie, nextMovie)   
 }
 
